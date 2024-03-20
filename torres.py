@@ -18,6 +18,9 @@ class Torre(pg.sprite.Sprite):
         self.index_animacao = 0
         self.tempo_att = pg.time.get_ticks()
         
+        # Carregando o som de disparo
+        self.som_disparo = pg.mixer.Sound('audio/tiros_torretas.wav')
+
         #atualizando animação
         self.image = self.lista_animacao[self.index_animacao]
         self.rect = self.image.get_rect(center=position)
@@ -52,6 +55,8 @@ class Torre(pg.sprite.Sprite):
                 self.index_animacao = 0
                 self.ultimo_tiro = pg.time.get_ticks()
                 self.alvo = None
+                # Tocando o som de disparo quando a animação termina
+                self.som_disparo.play()
                 
     def draw(self, surface):
         surface.blit(self.image, self.rect)

@@ -7,7 +7,7 @@ from botoes import *
 from torres import *
 
 pg.init()
-
+pg.mixer.init()
 # clock
 clock = pg.time.Clock()
 
@@ -63,6 +63,12 @@ imagem_recomecar = pg.image.load('imagens/hud/recomecar_btn.png').convert_alpha(
 imagem_torre = pg.image.load('imagens/torre_1/torretas1.png').convert_alpha()
 torre_cursor = pg.image.load('imagens/torre_1/torretas1_1.png').convert_alpha()
 
+# Aqui vamos carregar a música de fundo por enquanto só o de loop
+musica_fundo = pg.mixer.Sound('audio/Monsters_seek_my_home_LOOP.mp3')
+
+# música de fundo está tocando ou não
+musica_tocando = False
+
 # mundo
 mundo = Mapa(imagem_mapa)
 sidebar = Lateral(image_side)
@@ -79,6 +85,8 @@ iniciar = Botão(SCREEN_HEIGHT+ 102, 433, imagem_iniciar, True)
 avancar = Botão(SCREEN_HEIGHT+ 40, 433, imagem_avancar, False)
 recomecar = Botão(518, 355, imagem_recomecar, True)
 
+# Aqui vamos carregar a música de fundo por enquanto só o de loop
+musica_fundo = pg.mixer.Sound('audio/Monsters_seek_my_home_LOOP.mp3')
 
 #variaveis
 aguardando_posicao_torre = False  # Variável de controle para a colocação da torre
@@ -109,6 +117,13 @@ while run:
         grupo_torres.update(grupo_inimigos, mundo)
         pg.display.update()
     
+ # Se a música de fundo não estiver tocando e o jogo não estiver terminado
+    if not musica_tocando and not game_over:
+        # Toca a música de fundo em loop
+        musica_fundo.play(loops=-1)
+        # Define a variável para indicar que a música está tocando
+        musica_tocando = True
+
 #Renderização
     #mundo
     mundo.draw(win)
