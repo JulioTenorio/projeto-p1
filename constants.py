@@ -37,3 +37,6 @@ caminho = [
 
 spawn_cooldown = 300
 
+fraco = 0
+normal = 0
+forte = 0

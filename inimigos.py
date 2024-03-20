@@ -1,7 +1,7 @@
 import pygame as pg
 from pygame.math import Vector2
-from dados_inimigos import dados_inimigos
-
+from dados_inimigos import *
+import constants as c
 
 class Inimigo(pg.sprite.Sprite):
     def __init__(self, tipo_inimigo, caminhos, imagens):
@@ -13,11 +13,11 @@ class Inimigo(pg.sprite.Sprite):
         self.dano = dados_inimigos.get(tipo_inimigo)['dano']
         self.velocidade = dados_inimigos.get(tipo_inimigo)['velocidade']
         self.valor = dados_inimigos.get(tipo_inimigo)['valor']
-        self.forca = dados_inimigos.get(tipo_inimigo)
         self.image = imagens.get(tipo_inimigo)
         self.rect = self.image.get_rect()
         self.rect.center = self.pos
-
+        self.tipo = tipo_inimigo
+        
     def update(self, mundo):
         self.andar(mundo)   
         self.checa_vida(mundo)
@@ -34,10 +34,17 @@ class Inimigo(pg.sprite.Sprite):
     
     def checa_vida(self, mundo):
         if self.vida <= 0:
+            if self.tipo == 'fraco':
+                mundo.fraco += 1
+            if self.tipo == 'normal':
+                mundo.normal += 1
+            if self.tipo == 'forte':
+                mundo.forte += 1
             mundo.inimigos_mortos += 1
             self.kill()
-            mundo.dinheiro += self.valor 
-        
+            mundo.dinheiro += self.valor
+
+           
         
             
         

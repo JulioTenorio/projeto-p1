@@ -14,6 +14,9 @@ class Mapa():
         self.inimigos_spawnados = 0
         self.inimigos_mortos = 0
         self.inimigos_passaram = 0
+        self.fraco = fraco
+        self.normal = normal
+        self.forte = forte
         
     def draw(self, surface):
         surface.blit(self.image, (0, 0))

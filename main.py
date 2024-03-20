@@ -127,6 +127,11 @@ while run:
         escrita_texto(str(mundo.vida), fonte_texto, 'red', 10, 5)
         escrita_texto(str(mundo.dinheiro), fonte_texto, 'dark green', 10, 30)
         escrita_texto(str(mundo.nivel), fonte_texto, 'black', 10, 55)
+        #tipos de inimigos mortos
+        escrita_texto(str(mundo.fraco), fonte_texto, 'red', SCREEN_HEIGHT + 30, 20)
+        escrita_texto(str(mundo.normal), fonte_texto, 'blue', SCREEN_HEIGHT + 30, 40)
+        escrita_texto(str(mundo.forte), fonte_texto, 'purple', SCREEN_HEIGHT + 30, 60)
+        
         #grupos
         grupo_inimigos.draw(win)
         for torre in grupo_torres:
@@ -146,6 +151,7 @@ while run:
                 if mundo.inimigos_spawnados < len(mundo.lista_inimigos):
                     tipo_inimigo = mundo.lista_inimigos[mundo.inimigos_spawnados]
                     inimigo = Inimigo(tipo_inimigo, caminho, imagem_inimigo)
+                    print(inimigo.tipo)
                     grupo_inimigos.add(inimigo)
                     mundo.inimigos_spawnados += 1
                     ultimo_spawn = pg.time.get_ticks()
