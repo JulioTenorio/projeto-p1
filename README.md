@@ -53,9 +53,9 @@ Atualizar diagrama de blocos
 
 - `pygame`: 
 
-- `Figma`:
+- `Figma`: Facilita a criação do design dos elementos de interface do jogo, permitindo a criação de um mockup com já as posições definidas dos elementos na tela, sem precisar testar diretamente no código, além de facilitar mudanças necessárias ao decorrer do projeto.
 
-- `kanban`:
+- `kanban`: Organização das atividades de forma clara e visual de quais atividades eram necessárias para a sprint, e 
 
 <br>
 
@@ -74,7 +74,7 @@ Falar sonbre os conceitos
 
 ## 8) Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. 
 
-Falar sobre os...
+Dividir as atividades entre os membros da euqipe, além de utilizar algumas ferramentas que não os membros não tinham tanta familiaridade, o tempo reduzido impossibilitou em ter um onboarding para essas ferramentas e metodologias que poderiam ajudar em nossa organização.
 
  <br>
 

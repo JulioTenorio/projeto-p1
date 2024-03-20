@@ -140,12 +140,13 @@ while run:
         #hud
         sidebar.draw(win)
         escrita_texto(str(mundo.vida), fonte_texto, 'red', SCREEN_HEIGHT + 70, 27)
-        escrita_texto(str(mundo.dinheiro), fonte_texto, 'dark green', SCREEN_HEIGHT + 70, 69)
+        escrita_texto(str(mundo.dinheiro), fonte_texto, '#32b307', SCREEN_HEIGHT + 70, 69)
         escrita_texto(f"{mundo.nivel}/{ULTIMO_NIVEL}", fonte_texto, 'black', SCREEN_HEIGHT + 49, 113)
+        escrita_texto(str("150"), fonte_texto, '#32b307', SCREEN_HEIGHT + 53, 347)
         #tipos de inimigos mortos
-        escrita_texto(str(mundo.fraco), fonte_texto, 'red', SCREEN_HEIGHT + 30, 20)
-        escrita_texto(str(mundo.normal), fonte_texto, 'blue', SCREEN_HEIGHT + 30, 40)
-        escrita_texto(str(mundo.forte), fonte_texto, 'purple', SCREEN_HEIGHT + 30, 60)
+        escrita_texto(str(mundo.fraco), fonte_texto, 'red', SCREEN_HEIGHT + 32, 168)
+        escrita_texto(str(mundo.normal), fonte_texto, 'blue', SCREEN_HEIGHT + 32, 223)
+        escrita_texto(str(mundo.forte), fonte_texto, 'purple', SCREEN_HEIGHT + 32, 278)
         
         #grupos
         grupo_inimigos.draw(win)
