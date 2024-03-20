@@ -18,7 +18,7 @@ win = pg.display.set_mode((SCREEN_HEIGHT + SIDE_BAR, SCREEN_WIDTH))
 pg.display.set_caption("Projeto P1")
 
 #fontes para texto
-fonte_texto = pg.font.SysFont('Goudy Stout', 24, True)
+fonte_texto = pg.font.SysFont('Goudy Stout', 20, True)
 fonte_texto_grande = pg.font.SysFont('Goudy Stout', 26)
 
 #desenhando textos na tela
@@ -49,17 +49,17 @@ def criar_torre(mouse_pos):
             
 # carregando imagens
 imagem_mapa = pg.image.load('imagens/niveis/mapa.png').convert_alpha()
-image_side = pg.image.load('imagens/hud/madeira.jpg').convert_alpha()
+image_side = pg.image.load('imagens/hud/hud.png').convert_alpha()
 imagem_inimigo = {
     'fraco': pg.image.load('imagens/inimigos/inimigo_1.png').convert_alpha(),
     'normal': pg.image.load('imagens/inimigos/inimigo_2.png').convert_alpha(),
     'forte': pg.image.load('imagens/inimigos/inimigo_3.png').convert_alpha()
     }
-imagem_compra_torre = pg.image.load('imagens/hud/botao_torre.png').convert_alpha()
-imagem_cancelar_compra = pg.image.load('imagens/hud/botao_cancelar_compra.png').convert_alpha()
-imagem_iniciar = pg.image.load('imagens/hud/botao_iniciar.png').convert_alpha()
-imagem_avancar = pg.image.load('imagens/hud/botao_avancar.png').convert_alpha()
-imagem_recomecar = pg.image.load('imagens/hud/botao_recomecar.png').convert_alpha()
+imagem_compra_torre = pg.image.load('imagens/hud/torretas1_1.png').convert_alpha()
+imagem_cancelar_compra = pg.image.load('imagens/hud/torretas_cancelar.png').convert_alpha()
+imagem_iniciar = pg.image.load('imagens/hud/play.png').convert_alpha()
+imagem_avancar = pg.image.load('imagens/hud/fw.png').convert_alpha()
+imagem_recomecar = pg.image.load('imagens/hud/recomecar_btn.png').convert_alpha()
 imagem_torre = pg.image.load('imagens/torre_1/torretas1.png').convert_alpha()
 torre_cursor = pg.image.load('imagens/torre_1/torretas1_1.png').convert_alpha()
 
@@ -73,11 +73,11 @@ grupo_inimigos = pg.sprite.Group()
 grupo_torres = pg.sprite.Group(grupo_inimigos)
 
 # criação dos botões
-compra_torre = Botão(SCREEN_HEIGHT + 30, 100, imagem_compra_torre, True)
-cancelar = Botão(SCREEN_HEIGHT+ 30, 200, imagem_cancelar_compra, True)
-iniciar = Botão(SCREEN_HEIGHT+ 30, 650, imagem_iniciar, True)
-avancar = Botão(SCREEN_HEIGHT+ 30, 550, imagem_avancar, False)
-recomecar = Botão(590, 335, imagem_recomecar, True)
+compra_torre = Botão(SCREEN_HEIGHT + 23, 330, imagem_compra_torre, True)
+cancelar = Botão(SCREEN_HEIGHT+ 108, 330, imagem_cancelar_compra, True)
+iniciar = Botão(SCREEN_HEIGHT+ 102, 433, imagem_iniciar, True)
+avancar = Botão(SCREEN_HEIGHT+ 40, 433, imagem_avancar, False)
+recomecar = Botão(518, 355, imagem_recomecar, True)
 
 
 #variaveis
@@ -124,9 +124,9 @@ while run:
             resultado_jogo = 1 #vitoria
         #hud
         sidebar.draw(win)
-        escrita_texto(str(mundo.vida), fonte_texto, 'red', 10, 5)
-        escrita_texto(str(mundo.dinheiro), fonte_texto, 'dark green', 10, 30)
-        escrita_texto(str(mundo.nivel), fonte_texto, 'black', 10, 55)
+        escrita_texto(str(mundo.vida), fonte_texto, 'red', SCREEN_HEIGHT + 70, 27)
+        escrita_texto(str(mundo.dinheiro), fonte_texto, 'dark green', SCREEN_HEIGHT + 70, 69)
+        escrita_texto(f"{mundo.nivel}/{ULTIMO_NIVEL}", fonte_texto, 'black', SCREEN_HEIGHT + 49, 113)
         #grupos
         grupo_inimigos.draw(win)
         for torre in grupo_torres:
