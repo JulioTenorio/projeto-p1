@@ -3,10 +3,11 @@
 ## 1) Membros da `Equipe 5`:
 <br>
 
+
 - Bruno Maximo
-- Diego Davis
-- Diogo da Silva
-- Júlio Tenório
+- [Diego Davis (ddm)](https://github.com/diegodvsmelo)
+- [Diogo Rodrigues (dsr)](https://github.com/Monkius-Maximus)
+- [Júlio Tenório (jclt)](https://github.com/JulioTenorio)
 - William 
 
 <br>
