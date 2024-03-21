@@ -117,7 +117,7 @@ Não ter feito o mapa utilizando de ferramentas que gerassem dados que auxiliari
 
 `Bruno`:
 
-`Diego`:
+`Diego`: Gestão de tempo, planejamento e trabalho em equipe. São os pilares de qualquer projeto bem feito, o nosso pecou em alguns desses aspectos mas conseguimos nos sobrepor a eles, mas sem duvidas me ensinou a antes de começar a fazer o trabalho em si, organizar bem cada um desses aspectos.
 
 `Diogo`: Dificil de dizer apenas uma, mas eu diria que o projeto apenas serviu para me mostrar a importância do trabalho em equipe, planejamento e comunicação, tendo em vista que durante todo o processo eu pude experimentar as diversas etapas de desenvolvimento de um produto e as dificuldades de se conciliar as expectativas com aquilo que temos de recursos disponiveis no momento, seja isso mão de obra, tempo ou conhecimento, com aquilo que vamos conseguir concluir no prazo determinado. Além disso esse projeto me ajudou a melhor me relacionar com a turma e com os monitores em momentos em que eu pensei em desistir da disciplina, porém a ajuda e o empenho dos mesmos me forneceu um gás para permanecer tentando.
 
