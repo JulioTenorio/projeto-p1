@@ -1,6 +1,6 @@
-# <p align="center">Projeto: Tower Defense (precisamos de um nome legal) </p>
+# <p align="center">Protect KO-35 </p>
 
-## 1) Integrantes da `Equipe 5`:
+## 1) Membros da `Equipe 5`:
 <br>
 
 - Bruno Maximo
@@ -36,16 +36,21 @@ $ git clone https://github.com/JulioTenorio/projeto-p1.git
 Abra a pasta clonada em seu editor de código favorito.
 
 # Iniciar o jogo
-Execute o arquivo main.py presente na raiz do repositório.
+Execute o arquivo main.py
 
 # O seu editor de código rodará o jogo em uma nova janela.
 ```
+### Como jogar:
 
+*Utilize o mouse para interagir com o jogo
 <br>
 
 ## 4) A organização do código; 
 
-Atualizar diagrama de blocos
+### <p align="center">Diagrama de blocos </p>
+<p align="center">
+  <img alt="Diagrama de blocos" src="https://imgur.com/a/ScUlTPJ" width="100%">
+</p>
 
 <br>
 
@@ -55,32 +60,44 @@ Atualizar diagrama de blocos
 
 - `Figma`: Facilita a criação do design dos elementos de interface do jogo, permitindo a criação de um mockup com já as posições definidas dos elementos na tela, sem precisar testar diretamente no código, além de facilitar mudanças necessárias ao decorrer do projeto.
 
-- `kanban`: Organização das atividades de forma clara e visual de quais atividades eram necessárias para a sprint, e 
+- `kanban`: Organização das atividades de forma visual de quais atividades eram necessárias para a sprint.
+
+- `
 
 <br>
 
 ## 6) A divisão de trabalho dentro do grupo (quem fez o que); 
 
-`fulano`: hello
+`Diego`: Arte do mapa; implementação do sistema de dinheiro, vida e contagem, HUD e lógica do jogo; inimigos e vetores de direção
 
-`fulano 2`: hello 2
+`Diogo`: Criação de assets e animação; implementação das torres e sons; 
 
+`Julio`: Organização do Notion e Github; sistemas de mira e tiro; limitação de torres no mapa; criação de HUD, ReadMe
+
+`Bruno`: Criação da apresentação
+
+`William`: Criação da música tema do jogo
  <br>   
 
 ## 7) Conceitos que foram apresentados durante a disciplina e utilizados no projeto (indicando onde foram usados);    
 
-Falar sonbre os conceitos   
+Classes e objetos - Utilizamos classes e objetos para representar elementos do jogo, como inimigos e torres.
+
+Herança - Utilizamos herança para criar subclasses de inimigos
+
+Encapsulamento - ¿¿¿no mapa.py?????
+
+
 <br>
 
 ## 8) Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. 
 
-Dividir as atividades entre os membros da euqipe, além de utilizar algumas ferramentas que não os membros não tinham tanta familiaridade, o tempo reduzido impossibilitou em ter um onboarding para essas ferramentas e metodologias que poderiam ajudar em nossa organização.
-
+Um desafio foi dividir as atividades entre os membros da equipe, além de utilizar algumas ferramentas que não os membros não tinham tanta familiaridade, o tempo reduzido impossibilitou em ter um onboarding para essas ferramentas e metodologias que poderiam ajudar em nossa organização. O erro foi não ter conversado com toda equipe sobre como estava a disponibilidade de tempo, e a familiaridade com as ferramentas que iriamos utilizar. Além de conhecer melhor a estrutura base do que queriamos construir. O aprendizado que fica é que devemos buscar uma comunicação assertiva o mais cedo possivel no projeto, além de como tempo é essencial para um melhor entendimento e desenvolvimento das habilidades.
  <br>
 
 ## 9) Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele? 
 
-Não ter conversado com toda equipe como estava a disponibilidade de tempo, e a familiaridade com as ferramentas que iriamos utilizar
+Não ter feito o mapa utilizando de ferramentas que gerassem dados que auxiliariam na posição, como por exemplo o Tiled. Isso dificultou a implementação de sistemas como a limitação da posição das torres, posição relativa à outras torres.
 
 <br>
 
