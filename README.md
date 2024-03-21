@@ -131,10 +131,7 @@ Não ter feito o mapa utilizando de ferramentas que gerassem dados que auxiliari
 ## 12) Capturas de tela do sistema funcionando para compor a galeria de projetos 
 
 <p align="center">
-  <img alt="Sistema Funcionando Game Over" src="https://i.imgur.com/uuoZIMJ.jpeg" width="100%">
+  <img alt="Sistema Funcionando" src="https://imgur.com/a/b6IdTHf" width="100%">
 </p>
 
-<p align="center">
-  <img alt="Sistema Funcionando Vitória" src="https://imgur.com/jBy6jil" width="100%">
-</p>
 <br>
