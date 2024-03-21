@@ -130,8 +130,24 @@ Não ter feito o mapa utilizando de ferramentas que gerassem dados que auxiliari
 
 ## 12) Capturas de tela do sistema funcionando para compor a galeria de projetos 
 
+### <p align="center">Tela de Menu </p>
 <p align="center">
-  <img alt="Sistema Funcionando" src="https://imgur.com/a/b6IdTHf" width="100%">
+  <img alt="Banner menu" src="https://i.imgur.com/bqK46Rd.png" width="80%">
 </p>
 
+<br>
+<br>
+
+### <p align="center">Tela do Jogo </p>
+<p align="center">
+  <img alt="Banner game" src="https://i.imgur.com/vFfyapX.png" width="80%">
+</p>
+
+<br>
+<br>
+
+### <p align="center">Tela de Game Over </p>
+<p align="center">
+  <img alt="Banner gameover" src="https://i.imgur.com/kPjLsiU.png" width="80%">
+</p>
 <br>
