@@ -49,7 +49,7 @@ Execute o arquivo main.py
 
 ### <p align="center">Diagrama de blocos </p>
 <p align="center">
-  <img alt="Diagrama de blocos" src="https://imgur.com/a/ScUlTPJ" width="100%">
+  <img alt="Diagrama de blocos" src="https://i.imgur.com/DZRj60w.png" width="100%">
 </p>
 
 <br>
