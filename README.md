@@ -130,9 +130,9 @@ Não ter feito o mapa utilizando de ferramentas que gerassem dados que auxiliari
 
 ## 12) Capturas de tela do sistema funcionando para compor a galeria de projetos 
 
-### <p align="center">Tela de Menu </p>
+### <p align="center">Tela de Jogo </p>
 <p align="center">
-  <img alt="Banner menu" src="https://i.imgur.com/bqK46Rd.png" width="80%">
+  <img alt="Waves de Inimigos" src="https://i.imgur.com/bqK46Rd.png" width="80%">
 </p>
 
 <br>
@@ -140,7 +140,7 @@ Não ter feito o mapa utilizando de ferramentas que gerassem dados que auxiliari
 
 ### <p align="center">Tela do Jogo </p>
 <p align="center">
-  <img alt="Banner game" src="https://i.imgur.com/vFfyapX.png" width="80%">
+  <img alt="Waves mais Fortes" src="https://i.imgur.com/vFfyapX.png" width="80%">
 </p>
 
 <br>
@@ -150,4 +150,13 @@ Não ter feito o mapa utilizando de ferramentas que gerassem dados que auxiliari
 <p align="center">
   <img alt="Banner gameover" src="https://i.imgur.com/kPjLsiU.png" width="80%">
 </p>
+
+<br>
+<br>
+
+### <p align="center">Tela de Vitoria </p>
+<p align="center">
+  <img alt="Banner Vitoria" src="https://i.imgur.com/jBy6jil.jpg" width="80%">
+</p>
+
 <br>
