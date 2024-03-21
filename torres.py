@@ -22,7 +22,9 @@ class Torre(pg.sprite.Sprite):
         self.som_disparo = pg.mixer.Sound('audio/tiros_torretas.wav')
 
         #atualizando animação
-        self.image = self.lista_animacao[self.index_animacao]
+        self.angulo = 0
+        self.base_image = self.lista_animacao[self.index_animacao]
+        self.image = pg.transform.rotate(self.base_image, self.angulo)
         self.rect = self.image.get_rect(center=position)
 
         
@@ -38,6 +40,17 @@ class Torre(pg.sprite.Sprite):
     def update(self, grupo_inimigos, mundo):
         if self.alvo:
             self.animacao(mundo)
+
+            # Calcular o ângulo para o alvo
+            if self.alvo is not None:
+                dx = (self.alvo.rect.x + self.alvo.rect.width / 2) - (self.rect.x + self.rect.width / 2)
+                dy = (self.rect.y + self.rect.height / 2) - (self.alvo.rect.y + self.alvo.rect.height / 2)  # Inverte dy
+                self.angulo = math.atan2(dy, dx)
+
+                # Rotacionar a imagem
+                self.image = pg.transform.rotate(self.base_image, math.degrees(self.angulo) - 90)  # Subtrai 90 graus
+                self.rect = self.image.get_rect(center=self.rect.center)
+
         else:
             if pg.time.get_ticks() - self.ultimo_tiro > (self.cooldown / mundo.velocidade_nivel):
                 self.selecionar_alvo(grupo_inimigos)
@@ -45,7 +58,7 @@ class Torre(pg.sprite.Sprite):
     
     def animacao(self, mundo):
         #atualizar imagem
-        self.image = self.lista_animacao[self.index_animacao]
+        self.base_image = self.lista_animacao[self.index_animacao]
         #checando se tempo o suficiente ja passou
         if pg.time.get_ticks() - self.tempo_att > (delay_animacao / mundo.velocidade_nivel):
             self.tempo_att = pg.time.get_ticks()
@@ -58,10 +71,8 @@ class Torre(pg.sprite.Sprite):
                 # Tocando o som de disparo quando a animação termina
                 self.som_disparo.play()
                 
-    def draw(self, surface):
-        surface.blit(self.image, self.rect)
-        if self.selecionado:
-            surface.blit(self.imagem_range, self.range_rect)
+    def draw(self, win):
+        win.blit(self.image, self.rect)
         
     
     def selecionar_alvo(self, grupo_inimigos):
