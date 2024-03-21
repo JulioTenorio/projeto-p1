@@ -15,7 +15,7 @@ torre_selecionada = None
 
 # setup da janela do jogo
 win = pg.display.set_mode((SCREEN_HEIGHT + SIDE_BAR, SCREEN_WIDTH))
-pg.display.set_caption("Projeto P1")
+pg.display.set_caption("Protect KO-35")
 
 #fontes para texto
 fonte_texto = pg.font.SysFont('Goudy Stout', 20, True)
