@@ -103,7 +103,7 @@ Um desafio foi dividir as atividades entre os membros da equipe, além de utiliz
 
 ## 9) Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele? 
 
-Não ter feito o mapa utilizando de ferramentas que gerassem dados que auxiliariam na posição, como por exemplo o Tiled. Isso dificultou a implementação de sistemas como a limitação da posição das torres, posição relativa à outras torres.
+Não ter feito o mapa utilizando de ferramentas que gerassem dados que auxiliariam na posição, como por exemplo o Tiled. Isso dificultou a implementação de sistemas como a limitação da posição das torres, posição relativa à outras torres, e tudo que precisamos ter posição relativa a outro objeto. Conseguimos contornar esse problema utlizando Pitagoras para calcular a distância entre dois objetos, o que se mostrou funcionar por um bom tempo, mas ao termino do projeto percebemos como isso dificultou, e até mesmo impossibilitou de implementar algumas funções no nosso jogo.
 
 <br>
 
