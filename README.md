@@ -1,5 +1,10 @@
 # <p align="center">Protect KO-35 </p>
 
+### <p align="center">
+<p align="center">
+  <img alt="Diagrama de blocos" src="https://i.imgur.com/E6VsJOY.png" width="100%">
+</p>
+
 ## 1) Membros da `Equipe 5`:
 <br>
 
@@ -87,18 +92,22 @@ Execute o arquivo main.py
 
 ## 7) Conceitos que foram apresentados durante a disciplina e utilizados no projeto (indicando onde foram usados);    
 
-Classes e objetos - Utilizamos classes e objetos para representar elementos do jogo, como inimigos e torres.
+`Classes e objetos` - Utilizamos classes e objetos para representar elementos do jogo, como inimigos e torres.
 
-Herança - Utilizamos herança para criar subclasses de inimigos
+`Herança` - Utilizamos herança para criar subclasses de inimigos
 
-Encapsulamento - ¿¿¿no mapa.py?????
+`Encapsulamento` - ¿¿¿no mapa.py?????
 
 
 <br>
 
 ## 8) Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. 
 
-Um desafio foi dividir as atividades entre os membros da equipe, além de utilizar algumas ferramentas que não os membros não tinham tanta familiaridade, o tempo reduzido impossibilitou em ter um onboarding para essas ferramentas e metodologias que poderiam ajudar em nossa organização. O erro foi não ter conversado com toda equipe sobre como estava a disponibilidade de tempo, e a familiaridade com as ferramentas que iriamos utilizar. Além de conhecer melhor a estrutura base do que queriamos construir, visto que em momentos por cada um estar focado em conlcuir uma determinada tarefa gastamos tempo desenvolvendo recursos e funcionalidades que não chegaram a nossas versões finais devido a dificuldade de implementar e documentar todas elas no prazo que tinhamos. O aprendizado que fica é que devemos buscar uma comunicação assertiva o mais cedo possivel no projeto, além de como tempo é essencial para um melhor entendimento e desenvolvimento das habilidades.
+Um desafio foi dividir as atividades entre os membros da equipe, além de utilizar algumas ferramentas que não os membros não tinham tanta familiaridade, o tempo reduzido impossibilitou em ter um onboarding para essas ferramentas e metodologias que poderiam ajudar em nossa organização. O erro foi não ter conversado com toda equipe sobre como estava a disponibilidade de tempo, e a familiaridade com as ferramentas que iriamos utilizar.
+
+Além de conhecer melhor a estrutura base do que queriamos construir, visto que em momentos por cada um estar focado em conlcuir uma determinada tarefa gastamos tempo desenvolvendo recursos e funcionalidades que não chegaram a nossas versões finais devido a dificuldade de implementar e documentar todas elas no prazo que tinhamos.
+
+O aprendizado que fica é que devemos buscar uma comunicação assertiva o mais cedo possivel no projeto, além de como tempo é essencial para um melhor entendimento e desenvolvimento das habilidades.
  <br>
 
 ## 9) Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele? 
@@ -121,7 +130,7 @@ Não ter feito o mapa utilizando de ferramentas que gerassem dados que auxiliari
 
 `Diogo`: Dificil de dizer apenas uma, mas eu diria que o projeto apenas serviu para me mostrar a importância do trabalho em equipe, planejamento e comunicação, tendo em vista que durante todo o processo eu pude experimentar as diversas etapas de desenvolvimento de um produto e as dificuldades de se conciliar as expectativas com aquilo que temos de recursos disponiveis no momento, seja isso mão de obra, tempo ou conhecimento, com aquilo que vamos conseguir concluir no prazo determinado. Além disso esse projeto me ajudou a melhor me relacionar com a turma e com os monitores em momentos em que eu pensei em desistir da disciplina, porém a ajuda e o empenho dos mesmos me forneceu um gás para permanecer tentando.
 
-`Júlio`:
+`Júlio`: Reforçou ainda mais a importância de uma gestão de risco, comunicação e principalmente compreender e planejar bem o projeto. Isso evitaria alguns erros que cometemos, embora considerando o curto espaço de tempo acredito que conseguimos superar esses problemas. 
 
 `William`:
 
